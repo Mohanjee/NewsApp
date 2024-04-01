@@ -3,15 +3,22 @@ const url="https://newsapi.org/v2/everything?q=";
 
 window.addEventListener('load',()=> fetchNews("India"));
 
+
+
+
 function reload(){
     window.location.reload();
 }
+
 
 async function fetchNews(query){
     const res=await fetch(`${url}${query}&apiKey=${API_KEY}`);
     const data=await res.json();
     bindData(data.articles);
 }
+
+
+
 
 function bindData(articles){
     const cardsContainer = document.getElementById('cards-container');
@@ -26,6 +33,11 @@ function bindData(articles){
         cardsContainer.appendChild(cardClone);
     });
 }
+
+
+
+
+
 
 function fillDataInCard(cardClone,article){
     const newsImg = cardClone.querySelector('#news-img');
@@ -48,6 +60,10 @@ function fillDataInCard(cardClone,article){
     });
 }
 
+
+
+
+
 let curSelectedNav = null;
 function onNavItemClick(id){
     fetchNews(id);
@@ -56,6 +72,9 @@ function onNavItemClick(id){
     curSelectedNav = navItem;
     curSelectedNav.classList.add('active');
 }
+
+
+
 
 const searchButton = document.getElementById('search-button');
 const searchText = document.getElementById('search-text');
