@@ -12,6 +12,11 @@
             <a href="#" onclick="reload()" class="company-logo">
                 <img src="./assets/logo.png" alt="company logo">
             </a>
+            
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
             <div class="nav-links">
                 <ul class="flex">
                     <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
@@ -19,19 +24,11 @@
                     <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
                 </ul>
             </div>
-            <div class="search-bar flex">
-                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
-                <button id="search-button" class="search-button">Search</button>
-            </div>
         </div>
+
     </nav>
-
-
-
-
     <main>
         <div class="cards-container container flex" id="cards-container">
-            
 
         </div>
     </main>
@@ -51,8 +48,7 @@
                 </div>
             </template>
       
-    
-
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
