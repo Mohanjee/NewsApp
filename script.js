@@ -86,3 +86,22 @@ searchButton.addEventListener('click',()=>{
     curSelectedNav?.classList.remove('active');
     curSelectedNav = null;
 });
+
+
+const options = {
+    bottom: '64px',
+    right: '32px',
+    left: 'unset',
+    time: '0.5s',
+    mixColor: '#fff',
+    backgroundColor: '#fff',
+    buttonColorDark: '#100f2c',
+    buttonColorLight: '#fff',
+    saveInCookies: true,
+    label: '🌓',
+    autoMatchOsTheme: true,
+    // Function to toggle dark mode class on <nav> element
+    onChange: (isDark) => {
+        document.querySelector('nav').classList.toggle('dark-mode', isDark);
+    }
+};
