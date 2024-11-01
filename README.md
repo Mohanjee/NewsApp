@@ -8,5 +8,5 @@ Home Interface of the project looks like this and here we will be able to see th
 
 ![Screenshot 2024-11-01 095917](https://github.com/user-attachments/assets/1559473d-d0b7-4082-961c-f9b74ffc3c24)
 
-Here is the example of search image 
+Here is the example of searching news  
 ![Screenshot 2024-11-01 095955](https://github.com/user-attachments/assets/07f3c7dc-0b05-404e-b2f3-fc983c0181ee)
